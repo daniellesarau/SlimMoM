@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
+
+.redirect {
+  align-items: center;
+  gap: 16px;
+  color: #9b9faa;
+  text-transform: uppercase;
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 20px;
+    border-left: 1px solid grey;
+  }
+}
+
+.linkTo {
+  margin-left: 20px;
+  &.active {
+    color: #212121;
+  }
+}

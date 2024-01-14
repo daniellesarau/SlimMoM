@@ -1,0 +1,9 @@
+.sidebarBox {
+  height: 40px;
+  background-color: #9b9faa;
+  margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

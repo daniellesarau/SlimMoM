@@ -1,0 +1,50 @@
+.section {
+  padding-top: 120px;
+  @media (max-width: 1279px) {
+    padding-top: 0;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+}
+
+.containerForm {
+  @media (max-width: 767px) {
+    margin: 0 auto;
+    max-width: 320px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+    margin-top: -32px;
+  }
+  @media (min-width: 768px) {
+    margin-top: -60px;
+    max-width: 768px;
+    padding: 40px 32px 48px;
+  }
+  @media (min-width: 1280px) {
+    margin-top: 0;
+    width: 1280px;
+    padding: 150px 16px 111px 16px;
+  }
+}
+
+.sidebarBox {
+  margin: auto;
+  @media (min-width: 768px) {
+    width: 100%;
+
+    height: auto;
+  }
+  @media (min-width: 1280px) {
+    width: 520px;
+    position: absolute;
+    margin-left: auto;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+}

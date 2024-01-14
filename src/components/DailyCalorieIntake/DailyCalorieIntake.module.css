@@ -1,0 +1,37 @@
+.listInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: flex-start;
+
+  max-width: 280px;
+  width: 100%;
+  line-height: 1.4;
+
+  @media (max-width: 767px) {
+    max-width: 250px;
+  }
+}
+.itemInfo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #9b9faa;
+}
+/* .normSpan {
+  color: ${props => (props.upperHandred ? 'red' : '#9b9faa')};
+} */
+.listTitle {
+  font-size: inherit;
+  line-height: inherit;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  @media (max-width: 550px) {
+    gap: 24px;
+  }
+
+  margin-bottom: 60px;
+}

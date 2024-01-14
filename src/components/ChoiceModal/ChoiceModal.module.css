@@ -1,0 +1,103 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+
+  @media (max-width: 1279px) {
+    position: fixed;
+    top: 80px;
+  }
+}
+.modal {
+  position: relative;
+  background-color: #ffffff;
+  width: 672px;
+  padding: 64px 80px 80px;
+  padding-bottom: 80px;
+
+  @media (max-width: 767px) {
+    width: 100vw;
+    max-height: 100%;
+    padding: 60px 20px 20px;
+    height: 100%;
+  }
+}
+.buttonBox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  @media (max-width: 767px) {
+    top: 0px;
+    height: 100%;
+  }
+}
+
+.title {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 26px;
+  }
+}
+.subtext {
+  width: 280px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 40px;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    width: 330px;
+  }
+}
+
+.buttonWrapper {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+
+  button:first-child {
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  padding: 10px;
+  fill: #9b9faa;
+  cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: #fc842d;
+  }
+}

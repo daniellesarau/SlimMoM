@@ -1,0 +1,156 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.containerAuthNav {
+  width: 100%;
+
+  @media (min-width: 1280px) {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (min-width: 1280px) {
+    align-items: flex-end;
+  }
+}
+
+.logoBox {
+  display: flex;
+  align-items: flex-end;
+}
+.containerUser {
+  @media (min-width: 1279px) {
+    display: none;
+  }
+  border-left: 2px solid #e0e0e0;
+  height: 32px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: -7px;
+}
+.user {
+  display: flex;
+}
+.userBox {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: -7px;
+}
+.buttonBox {
+  border-left: 2px solid #e0e0e0;
+  height: 32px;
+  margin-top: 4px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.button {
+  border: none;
+  color: #9b9faa;
+  cursor: pointer;
+}
+
+.navigation {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.navLink {
+  color: #9b9faa;
+  text-transform: uppercase;
+  margin-right: 16px;
+  cursor: pointer;
+
+  &.active {
+    color: #212121;
+  }
+}
+.modalOpen {
+  color: #9b9faa;
+  text-transform: uppercase;
+  margin-right: 16px;
+  cursor: pointer;
+  &.active {
+    color: #212121;
+  }
+  @media (max-width: 767px) {
+    margin-right: 0px;
+    margin-bottom: 14px;
+  }
+}
+
+.modalBox {
+  width: 100%;
+  height: 100vh;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  padding-top: 60px;
+  color: #ffffff;
+  background-color: #264061;
+  z-index: 50;
+  animation: fadeIn 0.5s linear infinite;
+  animation-iteration-count: 1;
+}
+
+@media (min-width: 768px) {
+  .modalBox {
+    font-size: 24px;
+    line-height: 2.1;
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .modalBox {
+    position: absolute;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .modalBox {
+    display: none;
+  }
+}
+.buttonMenu {
+  display: none;
+  @media (max-width: 1279px) {
+    animation: fadeIn 0.5s linear infinite;
+    animation-iteration-count: 1;
+    display: block;
+    border: none;
+    background: none;
+    margin-left: 53px;
+    cursor: pointer;
+  }
+}

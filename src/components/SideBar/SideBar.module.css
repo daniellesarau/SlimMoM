@@ -1,0 +1,72 @@
+.container {
+  background: #f0f1f3;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1279px) {
+    height: 100%;
+    max-height: fit-content;
+    max-width: 100vw;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 40px 20px;
+    justify-content: space-evenly;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    background-image: url('../../styles//images//leaves-aside-tablet.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  @media (min-width: 1280px) {
+    background-image: url('../../styles//images/leaves-desktop.png');
+  }
+}
+
+.title {
+  font-size: inherit;
+  line-height: inherit;
+  margin-bottom: 40px;
+
+  @media (max-width: 550px) {
+    margin-bottom: 24px;
+  }
+}
+.boxProducts {
+  @media (min-width: 768px) and (max-width: 1279px) {
+    margin-left: 97px;
+  }
+}
+
+.productsListBox {
+  width: 280px;
+  @media (max-width: 767px) {
+    width: 250px;
+  }
+  @media (max-width: 550px) {
+    width: 100%;
+  }
+  @media (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    width: 100%;
+
+    padding: 80px 32px;
+  }
+}
+
+.list {
+  color: #9b9faa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.notRecomended {
+  font-size: 0.9em;
+  color: #9b9faa;
+}
